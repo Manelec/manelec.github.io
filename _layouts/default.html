@@ -16,11 +16,18 @@
     <style>
         .jumbotron {
             background-color: white;
+            margin-bottom: 0;
         }
         
         .jumbotron h1,
         .jumbotron h3 {
             color: #333;
+        }
+        
+        .page-header {
+            background-color: #443;
+            padding: 8px 12px 8px 12px;
+            margin: 0;
         }
         
         footer {
@@ -60,7 +67,9 @@
                 </div>
             </div>
         </div>
-        <h2>{{page.title}}</h2>
+        <div class="page-header">
+            <h2>{{page.title}}</h2>
+        </div>
         {{content}}
     </div>
     <footer>
